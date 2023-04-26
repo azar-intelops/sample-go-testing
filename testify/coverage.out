@@ -1,0 +1,6 @@
+mode: set
+sample-testify/main.go:5.13,7.2 1 1
+sample-testify/main.go:9.32,10.15 1 1
+sample-testify/main.go:10.15,12.3 1 1
+sample-testify/main.go:13.2,13.14 1 1
+sample-testify/main.go:16.22,18.2 1 1
