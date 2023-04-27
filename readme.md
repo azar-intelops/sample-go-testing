@@ -7,3 +7,7 @@ Test file should always be present inside the package as to get code coverage an
 - The standard **testing** package in Golang provides a basic framework for writing unit tests and benchmarks. It includes various functions and methods for assertions and testing error conditions, making it a powerful tool for testing code.
 
 - **Testify**, on the other hand, is a third-party package that provides additional testing utilities and assertions that can make testing even more convenient and expressive. It allows developers to write tests that are more concise, readable, and maintainable.
+
+- **ginkgo**: This is a BDD-style testing framework for Go that provides a fluent syntax for writing tests. It includes support for asynchronous testing, parallel execution, and test coverage reporting.
+
+- **gomega**: This is a matcher library that works with ginkgo or other testing frameworks. It provides a wide range of matchers for testing various types of data.
