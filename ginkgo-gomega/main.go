@@ -10,11 +10,12 @@ func main() {
 }
 
 func EvenOrOdd(num int) string {
-	if num%2 == 0{
-		return "EVEN"
-	}
 	if num < 1 {
 		return errors.New("Invalid").Error()
+	}
+	
+	if num%2 == 0{
+		return "EVEN"
 	}
 	return "ODD"
 }

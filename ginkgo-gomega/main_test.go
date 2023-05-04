@@ -8,6 +8,7 @@ import (
 )
 
 var _ = Describe("GinkgoGomega", func() {
+	// EvenorOdd
 	Describe("Test EvenorOdd Function", func() {
 		Context("When Number is Even", func() {
 			It("Check 4 is even or odd", func ()  {
@@ -21,10 +22,21 @@ var _ = Describe("GinkgoGomega", func() {
 				Expect(got).To(Equal("ODD"))
 			})
 		})
-		Context("Error", func() {
-			It("Check 7 is even or odd", func ()  {
-				got := EvenOrOdd(7)
-				Expect(got).To(Equal("ODD"))
+		// Makes it pending!
+		XContext("Error", func() {
+			It("Check 0 is even or odd", func ()  {
+				got := EvenOrOdd(0)
+				Expect(got).To(Equal("Invalid"))
+			})
+		})
+	})
+
+	// Hello Function
+	Describe("Test Hello Function", func() {
+		Context("Just Says Hello World", func() {
+			It("Check 4 is even or odd", func ()  {
+				got := hello()
+				Expect(got).To(Equal("Hello World"))
 			})
 		})
 	})
@@ -40,22 +52,6 @@ func Test_main(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			main()
-		})
-	}
-}
-
-func Test_hello(t *testing.T) {
-	tests := []struct {
-		name string
-		want string
-	}{
-		// TODO: Add test cases.
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := hello(); got != tt.want {
-				t.Errorf("hello() = %v, want %v", got, tt.want)
-			}
 		})
 	}
 }
